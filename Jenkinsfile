@@ -10,7 +10,7 @@ node('master') {
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
                 name: 'github',
-                url: 'https://github.com/mmorejon/time-table.git'
+                url: 'https://github.com/tbpoore/time-table.git'
             ]]
         ])
 
