@@ -34,7 +34,7 @@ node('master') {
         }, Checkstyle: {
 
             // Generate Checkstyle report
-            sh '/usr/local/bin/swiftlint lint --reporter checkstyle > checkstyle.xml || true'
+            sh '/usr/local/Cellar/swiftlint/0.16.1/bin/swiftlint lint --reporter checkstyle > checkstyle.xml || true'
     
             // Publish checkstyle result
             step([$class: 'hudson.plugins.checkstyle.CheckStylePublisher', canComputeNew: false, defaultEncoding: '', healthy: '', pattern: 'checkstyle.xml', unHealthy: ''])
